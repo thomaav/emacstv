@@ -1,1 +1,1 @@
-Can be visited at https://emacs.no.
+Can be visited at http://folk.ntnu.no/thomaav/emacs/.
