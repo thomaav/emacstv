@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: Consolas;
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url("font/Consolas.ttf");
+    src: url("font/Consolas.ttf");
+}
+
+@media (orientation: portrait)
+{
+    body {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transform-origin: left top;
+	width: 100vh;
+	height: 100vw;
+	overflow-x: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+    }
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#emacs-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+#emacs-link {
+    width: 100%;
+}
+
+#emacs-logo-img {
+    width: 64px;
+    height: 64px;
+    color: #622486;
+}
+
+#emacs-header-text {
+    padding-top: 10px;
+}
+
+#values {
+    width: 25%;
+    background-color: #f0ebde;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+
+#gif-flex-container {
+    border-left: 3px solid grey;
+    margin-left: -17px;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: f1f1f1;
+}
+
+#gifs {
+    width: 100%;
+}
+
+#title {
+    position: relative;
+}
+
+#current-gif {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    width: 40vw;
+}
+
+#static-noise {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    display: none;
+    width: 40vw;
+}
+
+#selected {
+    font-weight: bold;
+}
+
+.command-selector {
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.command-selector:hover,
+.package-selector:hover,
+.theme-selector:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.gif-title, .gif-description {
+    color: rgb(58, 55, 125);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: none;
+}
+
+.gif-title {
+    font-size: 2em;
+}
+
+.gif-description {
+    font-size: 1.5em;
+}
+
+#selected-gif-title {
+    display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid rgb(58, 55, 125);
+}
+
+#selected-gif-description {
+    display: block;
+}
+
+#commands-title,
+#packages-title,
+#themes-title {
+    font-size: 1.5em;
+    color: rgb(58, 55, 125);
+    margin-bottom: 0.5em;
+}
+
+#commands-title:hover,
+#packages-title:hover,
+#themes-title:hover {
+    cursor: pointer;
+}
+
+a {
+    color: #624195;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+@media (min-width: 320px) and (max-width: 767px)
+{
+    body {
+	font-size: 0.5em;
+    }
+
+    #emacs-logo {
+	text-align: center;
+	width: 100%;
+	font-size: 1.5em;
+    }
+
+    #emacs-logo-img {
+	width: 32px;
+	height: 32px;
+	color: #622486;
+    }
+}

@@ -1,0 +1,127 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emacs TV</title>
+  <link rel="icon" type="image/png" href="img/emacs.png" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+p
+<body>
+  <div id="container">
+    <div id="values">
+      <div id="emacs-header">
+        <a id="emacs-link" href="https://www.gnu.org/software/emacs/">
+          <img id="emacs-logo-img" src="img/emacs.png">
+          <p id="emacs-header-text">GNU Emacs</p>
+        </a>
+      </div>
+
+      <p id="commands-title">Commands</p>
+      <p gif-src="gifs/zap-to-s.gif" id="selected" class="command-selector">M-z - zap-to-char</p>
+      <p gif-src="gifs/kill-balanced-expression.gif" class="command-selector">C-M-k - kill-balanced-expression</p>
+      <p gif-src="gifs/select-to-balancing-paren.gif" class="command-selector">C-M-SPACE - mark-sexp</p>
+      <p gif-src="gifs/back-to-indentation.gif" class="command-selector">M-m - back-to-indentation</p>
+      <p gif-src="gifs/kill-rectangle.gif" class="command-selector">C-x r k - kill-rectangle</p>
+      <p gif-src="gifs/string-rectangle.gif" class="command-selector">C-x r t - string-rectangle</p>
+      <p gif-src="gifs/comment-region.gif" class="command-selector">M-c - comment-region</p>
+      <p gif-src="gifs/uncomment-region.gif" class="command-selector">C-x M-c - uncomment-region</p>
+      <p gif-src="gifs/insert-parentheses.gif" class="command-selector">M-( - insert-parentheses</p>
+      <p gif-src="gifs/expand-region.gif" class="command-selector">C-q - expand-region</p>
+      <p gif-src="gifs/point-to-register.gif" class="command-selector">C-, - point-to-register</p>
+      <p gif-src="gifs/point-to-register.gif" class="command-selector">M-, - jump-to-register</p>
+      <p gif-src="gifs/upcase-word.gif" class="command-selector">M-l - downcase-word, M-u - upcase-word</p>
+      <p gif-src="gifs/upcase-region.gif" class="command-selector">C-x C-l - downcase-region, C-x C-u - upcase-region</p>
+      <p gif-src="gifs/transpose-lines.gif" class="command-selector">C-x C-t - transpose-lines</p>
+      <p gif-src="gifs/kmacro-start-macro.gif" class="command-selector">C-x (,) - kmacro-{start-end}-macro</p>
+      <p gif-src="gifs/kmacro-start-macro.gif" class="command-selector">C-x e - kmacro-end-and-call-macro</p>
+      <p gif-src="gifs/fill-paragraph.gif" class="command-selector">M-q - fill-paragraph</p>
+      <p gif-src="gifs/negative-kill-word.gif" class="command-selector">M-- M-d - negative kill-word</p>
+      <p gif-src="gifs/mark-previous-like-this.gif" class="command-selector">C-< - mark-previous-like-this</p>
+      <p gif-src="gifs/next-blank-line.gif" class="command-selector">M-e/M-a - {next,previous}-blank-line</p>
+
+      <br>
+      <p id="packages-title">Packages</p>
+      <p gif-src="gifs/smooth-scrolling.gif" class="package-selector">smooth-scrolling</p>
+      <p gif-src="gifs/beacon-mode.gif" class="package-selector">beacon-mode</p>
+      <p gif-src="gifs/linum-relative.gif" class="package-selector">linum-relative</p>
+      <p gif-src="gifs/nyan-mode.gif" class="package-selector">nyan-mode</p>
+      <p gif-src="gifs/popwin.gif" class="package-selector">popwin</p>
+      <p gif-src="gifs/avy-goto-char.gif" class="package-selector">avy-goto-char</p>
+      <p gif-src="gifs/electric-pair-mode.gif" class="package-selector">electric-pair-mode</p>
+
+      <br>
+      <p id="themes-title">Themes</p>
+      <a target="_blank" href="https://github.com/n3mo/cyberpunk-theme.el"><p class="theme-selector">cyberpunk</p></a>
+      <a target="_blank" href="https://github.com/rexim/gruber-darker-theme"><p class="theme-selector">gruber-darker</p></a>
+    </div>
+    <div id="gif-flex-container">
+      <div id="gifs">
+      <h2 class="gif-title" id="selected-gif-title">zap-to-char</h2>
+      <h2 class="gif-title">kill-balanced-expression</h2>
+      <h2 class="gif-title">mark-sexp</h2>
+      <h2 class="gif-title">back-to-indentation</h2>
+      <h2 class="gif-title">kill-rectangle</h2>
+      <h2 class="gif-title">string-rectangle</h2>
+      <h2 class="gif-title">comment-region</h2>
+      <h2 class="gif-title">uncomment-region</h2>
+      <h2 class="gif-title">insert-parentheses</h2>
+      <h2 class="gif-title">expand-region</h2>
+      <h2 class="gif-title">point-to-register</h2>
+      <h2 class="gif-title">jump-to-register</h2>
+      <h2 class="gif-title">downcase-word, upcase-word</h2>
+      <h2 class="gif-title">downcase-region, upcase-region</h2>
+      <h2 class="gif-title">transpose-lines</h2>
+      <h2 class="gif-title">kmacro-{start,end}-macro</h2>
+      <h2 class="gif-title">kmacro-end-and-call-macro</h2>
+      <h2 class="gif-title">fill-paragraph</h2>
+      <h2 class="gif-title">negative kill-word</h2>
+      <h2 class="gif-title">mark-previous-like-this</h2>
+      <h2 class="gif-title">{next,previous}-blank-line</h2>
+
+      <h2 class="gif-title">smooth-scrolling</h2>
+      <h2 class="gif-title">beacon-mode</h2>
+      <h2 class="gif-title">linum-relative</h2>
+      <h2 class="gif-title">nyan-mode</h2>
+      <h2 class="gif-title">popwin</h2>
+      <h2 class="gif-title">avy-goto-char</h2>
+      <h2 class="gif-title">electric-pair-mode</h2>
+
+      <br>
+      <img id="current-gif" src="gifs/zap-to-s.gif">
+      <img id="static-noise" src="img/static_noise.jpg">
+
+      <p class="gif-description" id="selected-gif-description">Kill up to and including ARGth occurrence of CHAR.</p>
+      <p class="gif-description">Kill the sexp (balanced expression) following point.</p>
+      <p class="gif-description">Set mark ARG sexps from point.</p>
+      <p class="gif-description">Move point to the first non-whitespace character on this line.</p>
+      <p class="gif-description">Delete the region-rectangle and save it as the last killed one.</p>
+      <p class="gif-description">Replace rectangle contents with STRING on each line.</p>
+      <p class="gif-description">Comment or uncomment each line in the region.</p>
+      <p class="gif-description">Uncomment each line in the BEG .. END region.</p>
+      <p class="gif-description">Enclose following ARG sexps in parentheses.</p>
+      <p class="gif-description">Increase selected region by semantic units.</p>
+      <p class="gif-description">Store current location of point in register REGISTER.</p>
+      <p class="gif-description">Move point to location stored in a register.</p>
+      <p class="gif-description">Uppercase or lowercase to the end of current word.</p>
+      <p class="gif-description">Uppercase or lowercase current selected region.</p>
+      <p class="gif-description">Transpose adjacent lines.</p>
+      <p class="gif-description">Start defining keyboard macro, end defining keyboard macro.</p>
+      <p class="gif-description">Call last defined keyboard macro.</p>
+      <p class="gif-description">Fills paragraph to a set width.</p>
+      <p class="gif-description">M-- does an action in a negative manner, e.g. kill-word -1 times here.</p>
+      <p class="gif-description">Creates multiple cursors at positions «like this», i.e. whatever you have already marked</p>
+      <p class="gif-description">Jump to the next or previous blank line</p>
+
+      <p class="gif-description">Scroll down in buffer before reaching the last line.</p>
+      <p class="gif-description">Light a beacon at the cursor when moving.</p>
+      <p class="gif-description">Show relative line numbers to know how many lines to move at once.</p>
+      <p class="gif-description">A cat that shows how far down into the file you are.</p>
+      <p class="gif-description">A popup window that works well with helm.</p>
+      <p class="gif-description">Jump to anywhere in any buffer with at most 3 character presses.</p>
+      <p class="gif-description">Automatically pair brackets.</p>
+      </div>
+    </div>
+  </div>
+</body>
